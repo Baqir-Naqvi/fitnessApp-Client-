@@ -30,7 +30,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const indexOfLastExercise = currentPage * exercisesPerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
 //Made Slice a string to Fix THIS!!!!!!!!!!!!!!!!!#!@#!@#!@#
-  const currentExercises = exercises?.slice(indexOfFirstExercise, indexOfLastExercise);
+  const currentExercises = exercises
 
   const paginate = (event, value) => {
     setCurrentPage(value);
